@@ -1,0 +1,54 @@
+@Metadata.layer: #CUSTOMER
+annotate entity zkir_c_md_header
+    with 
+{
+   @UI:   
+    { facet: [{ type: #IDENTIFICATION_REFERENCE, id: 'HEADER', purpose: #STANDARD, label: 'Header' , position: 10 },
+             { type: #LINEITEM_REFERENCE, id: 'ITEM', purpose: #STANDARD, targetElement: '_Item', label: 'Item Data' , position: 20}
+             ],
+     lineItem: [{position: 10, label: 'Material Document'  }],
+     identification: [{position: 10, label: 'Material Document'  }],
+     selectionField: [{position: 10  }]
+    }
+    
+//    { lineItem: [{label: 'Material Document', position: 10  }] }
+   
+   MaterialDocument;
+   @UI:{ 
+       lineItem: [{position: 20, label: 'Year'  }],
+       identification: [{position: 20, label: 'Year'  }],
+        selectionField: [{position: 10  }]
+       }
+   DocumentYear;
+   @UI:{ 
+       lineItem: [{position: 30, label: 'Reference Document'  }],
+       identification: [{position: 30, label: 'Reference Document'  }]
+       }
+   ReferenceDocument;
+   @UI:{ 
+       lineItem: [{position: 40, label: 'Supplier'  }],
+       identification: [{position: 40, label: 'Supplier'  }]
+       }
+   Supplier;
+   @UI:{ 
+       lineItem: [{position: 50, label: 'Goods Movement Code'  }],
+       identification: [{position: 50, label: 'Goods Movement Code'  }]
+       }
+   GoodsMovementCode;
+   @UI:{ 
+       lineItem: [{position: 60, label: 'Receiving Plant'  }],
+       identification: [{position: 60, label: 'Receiving Plant'  }]
+       }
+   ReceivingPlant;
+   @UI:{ 
+       lineItem: [{position: 70, label: 'Header Text'  }],
+       identification: [{position: 70, label: 'Header Text'  }]
+       }
+   MaterialDocumentHeaderText;
+   @UI.hidden: true
+   lastchangedat;
+    @UI.hidden: true
+   totallastchangedat;
+  
+    
+}

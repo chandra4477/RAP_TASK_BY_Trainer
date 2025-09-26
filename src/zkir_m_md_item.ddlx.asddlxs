@@ -1,0 +1,82 @@
+@Metadata.layer: #CUSTOMER
+annotate entity zkir_c_md_item
+    with 
+{
+    @UI:{ 
+     
+    facet: [{ type: #IDENTIFICATION_REFERENCE, id: 'ITM', purpose: #STANDARD, label: 'Item' , position: 10 }],
+    lineItem: [{ label: 'Material Document', position: 10 }],
+    
+    hidden: true
+    }
+    MaterialDocument;
+    @UI:{ 
+    lineItem: [{ label: 'Year', position: 20 }]
+    }
+    DocumentYear;
+    @UI:{ 
+    lineItem: [{ label: 'Item', position: 30 }]
+    
+    }
+    DocumentItem;
+    @UI:{ 
+    lineItem: [{ label: 'Material', position: 40 }],
+    identification: [{position: 40, label: 'Material'  }]
+    }
+    Material;
+    @UI:{ 
+    lineItem: [{ label: 'Plant', position: 50 }],
+    identification: [{position: 50, label: 'Plant'  }]
+    }
+    Plant;
+    @UI:{ 
+    lineItem: [{ label: 'Storage Location', position: 60 }],
+    identification: [{position: 60, label: 'Storage Location'  }]
+    }
+    StorageLocation;
+    @UI:{ 
+    lineItem: [{ label: 'MVMT Type', position: 70 }],
+    identification: [{position: 70, label: 'MVMT Type'  }]
+    }
+    GoodsMovementType;
+    @UI:{ 
+    lineItem: [{ label: 'Purchase Order', position: 80 }],
+    identification: [{position: 80, label: 'Purchase Order'  }]
+    }
+    PurchaseOrder;
+    @UI:{ 
+    lineItem: [{ label: 'PO Item', position: 90 }],
+    identification: [{position: 90, label: 'PO Item'  }]
+    }
+    PurchaseOrderItem;
+    @UI:{ 
+    lineItem: [{ label: 'Ref Doc Type', position: 100 }],
+    identification: [{position: 100, label: 'Ref Doc Type'  }]
+    }
+    GoodsMovementRefDocType;
+    @UI:{ 
+    lineItem: [{ label: 'Reason', position: 110 }],
+    identification: [{position: 110, label: 'Reason'  }]
+    }
+    GoodsMovementReasonCode;
+    @UI:{ 
+    lineItem: [{ label: 'Quantity', position: 120 }],
+    identification: [{position: 120, label: 'Quantity'  }]
+    }
+    QuantityInEntryUnit;
+    @UI:{ 
+    lineItem: [{ label: 'UoM', position: 130 }],
+    identification: [{position: 130, label: 'UoM'  }]
+    }
+    EntryUnit;
+    @UI:{ 
+    lineItem: [{ label: 'Partial Delivery', position: 140 }],
+    identification: [{position: 140, label: 'Partial Delivery'  }]
+    }
+    IsCompletelyDelivered;
+    @UI.hidden: true
+    lastchangedat;
+    @UI.hidden: true
+    totallastchangedat;
+    
+}

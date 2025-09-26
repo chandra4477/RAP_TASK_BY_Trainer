@@ -1,0 +1,5 @@
+@EndUserText.label: 'MD'
+define service Zkir_sd_md {
+  expose zkir_c_md_header;
+  expose zkir_c_md_item;
+}
